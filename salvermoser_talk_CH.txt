@@ -1,0 +1,137 @@
+1 Title
+We've seen in this session that seismic ambient noise can be used to characterize subsurface changes. Here, I will present a project where the goal was to combine seismological know-how with structural engineering applications for nondestructive testing. 
+(The work was done at the LMU together with CH and SS)
+
+
+
+XT
+2 Overview
+Our key question in this project:  Can we …?
+-> Is it possible to use ambient and/or traffic noise to monitor small-scale structures? 
+
+By evaluating small velocity changes on a bridge, we wanted to characterize the impact of environmental effects, especially temperature variations on the material, which was intended to be a  a precursor study for structural health monitoring with passive signals.
+
+
+
+XT
+3a Measurement Setup I
+In order to do that, we installed a geophone array consisting of 27 vertical component standard geophones with 4.5 Hz corner frequency and a spacing of about 4m on a highway bridge in Germany (the Steinachtal bridge). They were left in place there for more than 2 months.
+
+The Steinachtal bridge is (a 229 m) about 200 m long and carries a traffic volume of 10-200+ vehicles per hour. It was built in 2008.
+
+XT
+If we look closer, we see that the geophones were installed not on top of the road, but in the accessible box girder below the road, shown by the cross-section here.
+
+XT
+ 3b Measurement Setup II
+For those of you who are not familiar with box girder constructions - some pictures:
+
+This is the bridge seen from below with the box girder, which looks like that from the inside. With the geophones on a linear array. (They were glued on the concrete after screwing them on a stand.) (in order to ensure good coupling they were cemented onto the concrete). 
+XT
+
+
+
+4 Raw
+The raw, passive signal recorded by one of the geophones for one hour looks like that,.. with distinct peaks, each produced by a vehicle passing the bridges expansion gaps at both ends (which compensate thermal expansion).
+
+In the spectrogram, where the frequency is on the vertical axis, we see those same peaks with also some horizontal lines that could be associated with electro-magnetic noise caused by a power line crossing the Steinachtal bridge.
+XT
+If we zoom into one of those events, we can see a single car passing over the bridge. 
+XT
+We can clearly identify an onset, when the vehicle hits the first gap by entering the bridge and a second hit when leaving the bridge over the second gap. In this case, we can use the time difference to determine that the car was going 90 km/h, which is still in agreement with the local speed limit. 
+On the spectrogram, we can see that many frequencies are excited as the car drives over the bridge. As the car leaves the bridge, the high frequencies are attenuated first, but the low frequencies show reverberations lasting for 20-30 seconds when the excited waves bounce back and forth between the ends of the bridge. 
+XT
+These natural frequencies of the bridge are visible in the spectrum. Most of them are excited between 2-8Hz, that's why we concentrated on this frequency band in the analysis. 
+XT
+In this project we addressed a number of questions: 
+Is it better to use the quiet part of the signals, or those where traffic noise is present?
+
+Can we extract and resolve small velocity variations from the passive signals we observe?
+
+Can we use this info also for monitoring structural health?
+XT
+
+
+5 Method
+In order to evaluate velocity changes in the material, we compared cross-correlations between receiver pairs. The black dashed line denotes a reference function, consisting of the average over two months of CCFs. Here you see an example of a CCFs recorded on a cold day (upper) and on a warm day (lower).
+XT
+Why cross-correlations, you may ask? Since we don't use well-known active sources but diffuse noise, cross-correlations are essential to simulate source-receiver pairs. They can be calculated for short time intervals and easily be stacked to increase their stability/quality. The ultimate goal of CCF is Green's function retrival with uniform sources as GFs contain all the material information we want.
+
+Unfortunately, since the source distribution on this longish structure and at these low frequencies we measured is rather unilateral, we  did not retrieve Greens functions in our experiment. However, we did obtain very stable CCF with an hourly resolution that contain all the information we need for investigating velocity changes as they are still sensitive to physical changes.
+
+XT
+If we look at this example of real data recorded on a cold versus a warm day, we see that lower temperatures come along with higher wavespeed and vice versa. The effect enhances toward the coda of the CC as later wavelets accumulate delays.
+Zooming in on the late part of the coda, we can see that on the cold day the signal (blue) is compressed, while on the warm day (red) it is stretched and arrives later. 
+Eventually, we used the stretching method to quantitatively compare hourly CCFs with the reference stack to obtain our relative velocity variations.
+
+XT
+To sum up: We found that a frequency band dominated by a 3 Hz peak is ideal for measuring velocity variations and combined with hourly CCFs, sufficiently stable for analysis which renders a relatively high temporal resolution for monitoring issues.
+
+We also found that using parts of the signal that contained excitation of the bridge by traffic resulted in a far better SNR on our CCFs, so we used that. 
+
+
+XT
+6 Results
+Here we see the relative velocity variations for the whole measurement period from december to march. This was measured using CCFs from a single receiver pair. 
+During the measurement period, which spanned from winter into spring, the outside temperature varied as well of course. 
+XT
+Let's have a look at the temperature series for the same period. It's easy to find an anticorrealtion in the ,...
+Warmer = slower, cold = faster, which fits with our expectations. 
+XT
+
+…., but if I flip the velocity variations curve and represent them as relative traveltime delays instead, it's easier to see that the (conformity) resemblance between the curves is striking. Even small wiggles equal and you have to remember these two are completely independent measurements!
+XT
+
+
+7 MARCH
+Let's zoom into March 2012!
+What we see here are the average velocity variations over 8 receiver pairs. 
+Again, more and less pronounced daily cycles in a range of 0 to 1.5% relative velocity change. 
+XT
+I included the deviation this time, so the range of all receiver pairs, to show that differences are really small.
+XT
+Plotting the temperature curve onto, reveals the striking resemblance of temperature and velocity variation curve, but also shows this constant lag, which can be attributed to thermal diffusion. That means temperature changes first need to slowly diffuse inside the concrete/bridge to cause velocity variations there.
+XT
+SOME NUMBERS:
+The relative velocity variations relating to the average-reference, range between -1.5 and +2.1%, while temperatures were from -23 to +14°C. We calculated an average variation rate of 0.064% per °C which greatly compares to results of previous studies  and found a thermal diffusion lag in the order of 3 hours.
+XT
+
+
+8a Reliability Tests
+We ran some tests to check the validity of our results with respect to other influencing effects:
+
+To make sure, we did not only measure the bridge getting shorter and longer, causing traveltime delays due to thermal expansion, we estimated its effect on relatiev velocity changes ...
+XT
+...which is some orders of magnitude smaller for steel-reinforced concrete and thus negligible for our experiment. 
+XT
+8b Reliability Tests
+In a more difficult test, we investigated temperature induced instrument drifts to exclude that this effect causes high apparent velocity variations, .. 
+XT
+...and found that the valuues are again 40-50 times smaller for the observed temperature range than our typical outcomes/values.
+
+Both effects could not account for the changes in seismic velocity that we observed.
+XT
+
+
+9 Conclusion + Perspective
+To conclude this talk, I want to emphasize our (findings)/results once again.
+
+Only passive measurements of ambient traffic noise allowed us to accurately measure velocity variations at hourly resolution.
+
+These ranged between -1.5% and +2.1% and were mostly induced by temperature changes in the range of -23 to +14°C.
+
+strong correlation between the two series could be determined, leading to the question if the idea can be used to create structural health monitoring systems since damage is usually also associated with drops in material velocity.
+
+Advantages in perspective of a future monitoring application would be the high temporal resolution, high detection accuracy and relatively low effort,...
+XT
+
+….but of course we first have to check some things.
+If we want to move towards detecting material damage, first we need a better understanding of the effect temperature has on wave speeds, to ultimately be able to compensate for it. 
+
+We want to continue research in this direction and confirm our results with real long term measurements, covering environmental changes for more than a year.
+
+Damage scenario test will follow on sample bodies, expired structures and in numerical simulations to ultimately develop an automatized damage detection method based only on traffic induced vibrations.
+
+
+
+
