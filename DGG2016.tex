@@ -221,7 +221,7 @@ pdfkeywords = {}}
             \node[align=center] at (image.center) {};
             \node[anchor=center] at (image.center) {
             		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum, width=7cm]
-						\includegraphics[width=\textwidth]{Figures/spectrum.png}
+						\includegraphics[width=\textwidth]{Figures/spectrum1.png}
 					\end{tcolorbox}
             };
         \end{tikzpicture}
@@ -363,40 +363,42 @@ pdfkeywords = {}}
 \subsection{Results}
 \begin{frame}{bla}\frametitle{Observed Results}
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole1_flip.png}};
-			 \node[anchor=south west,inner sep=0] at (2.7,5.9) {\textbf{\color{blue} \framebox{Velocity variation $\frac{\Delta v}{v}$} \color{white} + Temperature}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6,-3.4) {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole1_flip.png}};
+			 \node[anchor=south west,inner sep=0] at (-4.5,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta v}{v}$}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{Observed Results}
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole2_flip.png}};
-			 \node[anchor=south west,inner sep=0] at (2.7,6.02) {\textbf{\color{blue} Velocity variation $\frac{\Delta v}{v}$ \color{Green} + \framebox{Temperature}}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6,-3.4) {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole2_flip.png}};
+			 \node[anchor=south west,inner sep=0] at (-4.5,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta v}{v}$}};
+			 \node[anchor=south west,inner sep=0] at (1.1,2.5) {\textbf{\color{Green} Temperature}};
+			 \node[anchor=south west,inner sep=0] (image) at (-0.3,2.5) {\includegraphics[width=0.06\linewidth,keepaspectratio]{Figures/vs.png}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{Observed Results}
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole2.png}};
-			 \node[anchor=south west,inner sep=0] at (2.7,6.12) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$  \color{Green} + Temperature}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6,-3.4) {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole2.png}};
+			 \node[anchor=south west,inner sep=0] at (-4.5,2.5) {\textbf{\color{blue} Velocity variation \color{red} $\frac{\Delta t}{t}$}};
+			 \node[anchor=south west,inner sep=0] at (1.1,2.5) {\textbf{\color{Green} Temperature}};
+			 \node[anchor=south west,inner sep=0] (image) at (-0.3,2.5) {\includegraphics[width=0.06\linewidth,keepaspectratio]{Figures/vs.png}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{Observed Results}
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole3_altern.png}};
-			 \node[anchor=south west,inner sep=0] at (2.7,6.12) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$  \color{Green} + Temperature}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6,-3.4) {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/whole3_altern.png}};
+			 \node[anchor=south west,inner sep=0] at (-4.5,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+			 \node[anchor=south west,inner sep=0] at (1.1,2.5) {\textbf{\color{Green} Temperature}};
+			 \node[anchor=south west,inner sep=0] (image) at (-0.3,2.5) {\includegraphics[width=0.06\linewidth,keepaspectratio]{Figures/vs.png}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
@@ -407,52 +409,78 @@ pdfkeywords = {}}
 
 \begin{frame}{bla}\frametitle{March 2012}
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR1.png}};
-            \node[anchor=south west,inner sep=0] at (0,6) {\textbf{\color{blue} \framebox{Velocity variation $\frac{\Delta t}{t}$} \color{white} + Deviation (8 receiver pairs) \color{white} + Temperature}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR1.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
+\transfade
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR2.png}};
-            \node[anchor=south west,inner sep=0] at (0,6.1) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$ \color{orange!40} + \framebox{Deviation (8 receiver pairs)} \color{white} + Temperature}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR2.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+            \node[anchor=south west,inner sep=0] at (-5.2,2) {\textbf{\color{black!40} Deviation}};
+            \node[anchor=south west,inner sep=0] at (-6,1.5) {\textbf{\color{black!40} (32 receiver pairs)}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
+\transfade
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{Figures/stretch_MAR3.png}};
-            \node[anchor=south west,inner sep=0] at (0,6.135) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$ \color{orange!40} + Deviation (8 receiver pairs) \color{Green} + \framebox{Temperature}}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR3.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+            \node[anchor=south west,inner sep=0] at (-5.2,2) {\textbf{\color{black!40} Deviation}};
+            \node[anchor=south west,inner sep=0] at (-6,1.5) {\textbf{\color{black!40} (32 receiver pairs)}};
+            \node[anchor=south west,inner sep=0] at (-1,2.5) {\textbf{\color{Green} Temperature}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
+\transfade
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{Figures/stretch_MAR4.png}};
-            \node[anchor=south west,inner sep=0] at (0,6.135) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$ \color{orange!40} + Deviation (8 receiver pairs) \color{Green} + \framebox{Temperature}}};
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR4.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+            \node[anchor=south west,inner sep=0] at (-5.2,2) {\textbf{\color{black!40} Deviation}};
+            \node[anchor=south west,inner sep=0] at (-6,1.5) {\textbf{\color{black!40} (32 receiver pairs)}};
+            \node[anchor=south west,inner sep=0] at (-1,2.5) {\textbf{\color{Green} Temperature}};
         \end{tikzpicture}
     \end{center}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
+\transfade
 	\begin{center}
-        \begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (image) at (0, 0) 	  
-            	 {\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{Figures/stretch_MAR4.png}};
-%            \node[anchor=south west,inner sep=0] at (2,5) {\textbf{\color{white} Velocity variation $\frac{\Delta v}{v}$ \color{white} + Deviation \color{white} + \framebox{Temperature}}};
-			\node[anchor=south west,inner sep=0] at (0,6.135) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$ \color{orange!40} + Deviation (8 receiver pairs) \color{Green} + \framebox{Temperature}}};
-            \node[anchor=south west,inner sep=0] at (2.5,1.7) {\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Overall Results,width=7cm]
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR5.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+            \node[anchor=south west,inner sep=0] at (-5.2,2) {\textbf{\color{black!40} Deviation}};
+            \node[anchor=south west,inner sep=0] at (-6,1.5) {\textbf{\color{black!40} (32 receiver pairs)}};
+            \node[anchor=south west,inner sep=0] at (-1,2.5) {\textbf{\color{Green} Temperature}};
+            \node[anchor=south west,inner sep=0] at (3,2.5) {\textbf{\color{red!40} Simulated core}};
+            \node[anchor=south west,inner sep=0] at (3.2,2) {\textbf{\color{red!40} temperature}};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+\begin{frame}{bla}\frametitle{March 2012}
+\transfade
+	\begin{center}
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR5.png}};
+            \node[anchor=south west,inner sep=0] at (-6,2.5) {\textbf{\color{blue} Velocity variation $\frac{\Delta t}{t}$}};
+            \node[anchor=south west,inner sep=0] at (-5.2,2) {\textbf{\color{black!40} Deviation}};
+            \node[anchor=south west,inner sep=0] at (-6,1.5) {\textbf{\color{black!40} (32 receiver pairs)}};
+            \node[anchor=south west,inner sep=0] at (-1,2.5) {\textbf{\color{Green} Temperature}};
+            \node[anchor=south west,inner sep=0] at (3,2.5) {\textbf{\color{red!40} Simulated core}};
+            \node[anchor=south west,inner sep=0] at (3.2,2) {\textbf{\color{red!40} temperature}};
+            \node[anchor=south west,inner sep=0] at (-3.5,-2.3) {\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Overall Results,width=7cm]
             		    \begin{small}
 							\begin{tabular}{ll}
 								$\frac{\Delta v}{v}$  & -1.5$\%$ to +2.1$\%$\\
