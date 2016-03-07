@@ -37,13 +37,13 @@
 \title[]{\textbf{Passive monitoring using traffic noise recordings - case study on the Steinachtal Bridge}}
 %\subtitle{}
 \author[Johannes Salvermoser]{Johannes Salvermoser, C{\'e}line Hadziioannou, Simon C. St{\"a}hler}
-%\date{\today}
+\date{17.03.2016}
 \institute{Institute for Earth and Environmental Sciences\\ Ludwig Maximilians University Munich}
 %
 % -----------------------------------------------------------------------------
 %
 \hypersetup{%
-pdftitle    = {EGU 2015},
+pdftitle    = {DGG 2016},
 pdfsubject  = {},
 pdfauthor   = {Johannes Salvermoser},
 pdfkeywords = {}}
@@ -220,7 +220,7 @@ pdfkeywords = {}}
             	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/raw2+arrows.png}};
             \node[align=center] at (image.center) {};
             \node[anchor=center] at (image.center) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum, width=7cm]
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum {\color{salve@blue} (filtered)}, width=7cm]
 						\includegraphics[width=\textwidth]{Figures/spectrum1.png}
 					\end{tcolorbox}
             };
@@ -235,7 +235,7 @@ pdfkeywords = {}}
             	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/raw2+arrows.png}};
             \node[align=center] at (image.center) {};
             \node[anchor=center] at (image.center) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum, width=7cm]
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum (filtered), width=7cm]
 						\includegraphics[width=\textwidth]{Figures/spectrum2.png}
 					\end{tcolorbox}
             };
@@ -417,7 +417,6 @@ pdfkeywords = {}}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
-\transfade
 	\begin{center}
         \begin{tikzpicture}[overlay]
             \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR2.png}};
@@ -429,7 +428,6 @@ pdfkeywords = {}}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
-\transfade
 	\begin{center}
         \begin{tikzpicture}[overlay]
             \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR3.png}};
@@ -442,7 +440,6 @@ pdfkeywords = {}}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
-\transfade
 	\begin{center}
         \begin{tikzpicture}[overlay]
             \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR4.png}};
@@ -455,7 +452,6 @@ pdfkeywords = {}}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
-\transfade
 	\begin{center}
         \begin{tikzpicture}[overlay]
             \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR5.png}};
@@ -470,7 +466,6 @@ pdfkeywords = {}}
 \end{frame}
 
 \begin{frame}{bla}\frametitle{March 2012}
-\transfade
 	\begin{center}
         \begin{tikzpicture}[overlay]
             \node[anchor=south west,inner sep=0] (image) at (-6.1,-3.5) 	{\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/stretch_MAR5.png}};
@@ -502,94 +497,93 @@ pdfkeywords = {}}
 \section{Tests}
 \subsection{thermalex}
 \begin{frame}
-	\frametitle{Reliability Tests I}
+	\frametitle{Reliability Tests}
 	\begin{center}
-		\begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (box1) at (0,-0.13) {
+		\begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (box1) at (-6.2,0) {
             		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Thermal expansion,width=8cm]
             		    \begin{small}
-							\begin{itemize}
-								\item Varying inter-receiver distances cause traveltime variations
-								\item $\frac{\Delta t}{t} = - \frac{\Delta v}{v}$
-								\item[] $\Rightarrow$ Effect in the order of \textbf{6-14 $\mathbf{\cdot 10^{-4}}$ $\frac{\%}{\textdegree{C}}$} for steel-reinforced concrete (cf. \textit{Keller, T. and C. Menn} (1992))
-							\end{itemize}
+            		    Expansion/Contraction of the bridge\\
+ {\color{green!5}
+ $\Rightarrow$ Effect in the order of \textbf{6-14 $\mathbf{\cdot 10^{-4}}$ $\frac{\%}{\textdegree{C}}$} for steel-reinforced concrete}
             			\end{small}
 					\end{tcolorbox}};
-            \node[align=center] at (10,2) {\textcolor{white}{\fontsize{40}{50} $\checkmark$}};
-            \node[align=center] at (10,3) {\color{white} reference range:\\ 
-            		\color{white} -1.5 to +2.3 \%};             
+			\node[anchor=south west,inner sep=0] (box2) at (-6.2,-3.5) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Instrument stability,width=8cm]
+            		    \begin{small}
+ Temperature dependence of geophones\\
+ {\color{green!5} $\Rightarrow$ Apparent delay of max.											\textbf{0.52 \%} for extreme shifts in corner frequency.}
+            			\end{small}
+					\end{tcolorbox}};
+			\node[anchor=south west,inner sep=0] (box3) at (2.7,-1.2) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Msmt range ,width=3.5cm]
+            		    \begin{small}
+\textbf{-1.5 to +2.3 \%}
+            			\end{small}
+					\end{tcolorbox}};
         \end{tikzpicture}
    \end{center}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Reliability Tests I}
+	\frametitle{Reliability Tests}
 	\begin{center}
-		\begin{tikzpicture}
-            \node[anchor=south west,inner sep=0] (box1) at (0,0) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Thermal expansion,width=8cm]
+		\begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (box1) at (-6.2,0) {
+            		\begin{tcolorbox}[colback=green!5,colframe=green,title=Thermal expansion,width=8cm]
             		    \begin{small}
-							\begin{itemize}
-								\item Varying inter-receiver distances cause traveltime variations
-								\item $\frac{\Delta t}{t} = - \frac{\Delta v}{v}$
-								\item[] $\Rightarrow$ Effect in the order of \textbf{6-14 $\mathbf{\cdot 10^{-4}}$ $\frac{\%}{\textdegree{C}}$} for steel-reinforced concrete (cf. \textit{Keller, T. and C. Menn} (1992))	
-							\end{itemize}
+            		    Expansion/Contraction of the bridge\\
+ $\Rightarrow$ Effect in the order of \textbf{6-14 $\mathbf{\cdot 10^{-4}}$ $\frac{\%}{\textdegree{C}}$} for steel-reinforced concrete
             			\end{small}
 					\end{tcolorbox}};
-            \node[align=center] at (10,2) {\textcolor{green}{\fontsize{40}{50} $\checkmark$}};
-            \node[align=center] at (10,3) {
-            	 reference range:\\ 
-            		-1.5 to +2.3 \%            
-            	 };            
+			\node[anchor=south west,inner sep=0] (box2) at (-6.2,-3.5) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Instrument stability,width=8cm]
+            		    \begin{small}
+ Temperature dependence of geophones\\
+ {\color{green!5}
+ $\Rightarrow$ Apparent delay of max.											\textbf{0.52 \%} for extreme shifts in corner frequency.}
+            			\end{small}
+					\end{tcolorbox}};
+			\node[anchor=south west,inner sep=0] (box3) at (2.7,-1.2) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Msmt range ,width=3.5cm]
+            		    \begin{small}
+\textbf{-1.5 to +2.3 \%}
+            			\end{small}
+					\end{tcolorbox}};
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\ll$}} ++(box3);
+
         \end{tikzpicture}
    \end{center}
 \end{frame}
-
-%\subsection{mathtest}
+%
 \begin{frame}
-	\frametitle{Reliability Tests II}
+	\frametitle{Reliability Tests}
 	\begin{center}
-		\begin{tikzpicture}       
-            \node[anchor=south west,inner sep=0] (box2) at (0,0) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Mathematical test of instrument 		     
-            		                  stability,width=8cm]
+		\begin{tikzpicture}[overlay]
+            \node[anchor=south west,inner sep=0] (box1) at (-6.2,0) {
+            		\begin{tcolorbox}[colback=green!5,colframe=green,title=Thermal expansion,width=8cm]
             		    \begin{small}
-							\begin{itemize}
-								\item Calculate temperature dependence of geophones
-								\item Deconvolve impulse response and convolve with slightly different response ($\Delta f_c$ = 											0.2 Hz)
-								\item[] $\Rightarrow$ Correlation of original and simulated signal yielded an apparent delay of 												\textbf{4.8 $\mathbf{\cdot 10^{-2}}$ \%}.
-							\end{itemize}
+            		    Expansion/Contraction of the bridge\\
+ $\Rightarrow$ Effect in the order of \textbf{6-14 $\mathbf{\cdot 10^{-4}}$ $\frac{\%}{\textdegree{C}}$} for steel-reinforced concrete
             			\end{small}
 					\end{tcolorbox}};
-            \node[align=center] at (10,2) {\textcolor{white}{\fontsize{40}{50} $\checkmark$}};
-            \node[align=center] at (10,3) {\color{white} reference range:\\ 
-            		\color{white} -1.5 to +2.3 \%};              
-        \end{tikzpicture}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Reliability Tests II}
-	\begin{center}
-		\begin{tikzpicture}       
-            \node[anchor=south west,inner sep=0] (box2) at (0,0) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Mathematical test of instrument 		     
-            		                  stability,width=8cm]
+			\node[anchor=south west,inner sep=0] (box2) at (-6.2,-3.5) {
+            		\begin{tcolorbox}[colback=green!5,colframe=green,title=Instrument stability,width=8cm]
             		    \begin{small}
-							\begin{itemize}
-								\item Calculate temperature dependence of geophones
-								\item Deconvolve impulse response and convolve with slightly different response ($\Delta f_c$ = 											0.2 Hz)
-								\item[] $\Rightarrow$ Correlation of original and simulated signal yielded an apparent delay of 												\textbf{4.8 $\mathbf{\cdot 10^{-2}}$ \%}.
-							\end{itemize}
+ Temperature dependence of geophones\\
+ $\Rightarrow$ Apparent delay of max.											\textbf{0.52 \%} for extreme shifts in corner frequency.
             			\end{small}
 					\end{tcolorbox}};
-            \node[align=center] at (10,2) {\textcolor{green}{\fontsize{40}{50} $\checkmark$}};
-            \node[align=center] at (10,3) {
-            	 reference range:\\ 
-            		-1.5 to +2.3 \%            
-            	 };  
+			\node[anchor=south west,inner sep=0] (box3) at (2.7,-1.2) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Msmt range ,width=3.5cm]
+            		    \begin{small}
+            		    \textbf{-1.5 to +2.3 \%}
+            			\end{small}
+					\end{tcolorbox}};
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\ll$}} ++(box3);
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box2)-- node[below] {\color{black}\textbf{$<$}} ++(box3) ;
         \end{tikzpicture}
-    \end{center}
+   \end{center}
 \end{frame}
 	
 \section{Conclusions}
@@ -616,25 +610,58 @@ pdfkeywords = {}}
 \end{frame}
 
 \subsection{Outlook}
+
 \begin{frame}
-	\frametitle{Perspective}
-	\begin{center}
-		\begin{tikzpicture}       
-            \node[anchor=south west,inner sep=0] (box2) at (0,0) {
-            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Aspired Project,width=10cm]
+	\begin{tikzpicture}[overlay]
+		\node[anchor=south west,inner sep=0] (image) at (0,1.5) 	{\includegraphics[width=0.95\linewidth]{Figures/BAM_bridge.pdf}};
+		\node[anchor=south west,inner sep=0] (image) at (0.5,-2.5) 	{\includegraphics[width=0.6\linewidth]{Figures/TU-plate2.jpg}}; 
+		\node[anchor=south west,inner sep=0] (image) at (0,-4.3) 	{\includegraphics[width=0.7\linewidth]{Figures/bridge3.png}}; 
+		\node[anchor=south west,inner sep=0] (image) at (8.5,-3.7) 	{\includegraphics[width=0.3\linewidth]{Figures/abriss.jpg}};
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}
+	\begin{tikzpicture}[overlay]
+		\node[anchor=south west,inner sep=0] (image) at (0,1.5) 	{\includegraphics[width=0.95\linewidth]{Figures/BAM_bridge.pdf}};
+		\node[anchor=south west,inner sep=0] (image) at (0.5,-2.5) 	{\includegraphics[width=0.6\linewidth]{Figures/TU-plate2.jpg}}; 
+		\node[anchor=south west,inner sep=0] (image) at (0,-4.3) 	{\includegraphics[width=0.7\linewidth]{Figures/bridge3.png}}; 
+		\node[anchor=south west,inner sep=0] (image) at (8.5,-3.7) 	{\includegraphics[width=0.3\linewidth]{Figures/abriss.jpg}};
+		\node[anchor=south west,inner sep=0] (box2) at (1,-3) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Perspective - aspired project,width=10cm]
             		    \begin{small}
 							\begin{itemize}
 								\item Long-term ($>$ 1 year) monitoring of a highway bridge
 								\item[] $\Rightarrow$ improve characterization of temperature effect  
-								\item Damage-scenario tests on sample bodies and expired structures
+								\item Extensive damage-scenario tests on sample bodies and expired structures
 								\item Numerical simulations
 								\item[] $\Rightarrow$ confirm reliability of damage detection
 							\end{itemize}
             			\end{small}
 					\end{tcolorbox}};
-         \end{tikzpicture}
-    \end{center}
+	\end{tikzpicture}
 \end{frame}
+
+\begin{frame}
+	\begin{tikzpicture}[overlay]
+		\node[anchor=south west,inner sep=0] (image) at (0,1.5) 	{\includegraphics[width=0.95\linewidth]{Figures/BAM_bridge.pdf}};
+		\node[anchor=south west,inner sep=0] (image) at (0.5,-2.5) 	{\includegraphics[width=0.6\linewidth]{Figures/TU-plate2.jpg}}; 
+		\node[anchor=south west,inner sep=0] (image) at (0,-4.3) 	{\includegraphics[width=0.7\linewidth]{Figures/bridge3.png}}; 
+		\node[anchor=south west,inner sep=0] (image) at (8.5,-3.7) 	{\includegraphics[width=0.3\linewidth]{Figures/abriss.jpg}};
+		\node[anchor=south west,inner sep=0] (box2) at (1,-3) {
+            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Perspective - aspired project,width=10cm]
+            		    \begin{small}
+							\begin{itemize}
+								{\color{green!5}\item[] Long-term ($>$ 1 year) monitoring of a highway bridge} 
+								\item[] \textbf{Aim}
+								\item[] Detect corrosion-induced \textbf{decrease in prestressing} and associated \textbf{concrete crack} evolution
+								{\color{green!5}\item[] Numerical simulations
+								\item[] $\Rightarrow$ confirm reliability of damage detection}
+							\end{itemize}
+            			\end{small}
+					\end{tcolorbox}};
+	\end{tikzpicture}
+\end{frame}
+
 %-------------------------------------------------------------------------------------------
 %-------------------------------------------------------------------------------------------
 %Questions slide
@@ -654,6 +681,14 @@ pdfkeywords = {}}
 % ============================================================================
 \section{Extra}
 \subsection{extra slides}
+
+\begin{frame}
+	\frametitle{Temperature reduction}
+	\begin{center}
+		\includegraphics[width=\linewidth]{Figures/9.pdf}
+    \end{center}
+\end{frame}
+
 \begin{frame}
 	\frametitle{Daily Sunlight}
 	\begin{center}
