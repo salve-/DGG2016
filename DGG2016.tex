@@ -72,37 +72,11 @@ pdfkeywords = {}}
 \section{Overview}
 \subsection{Overview}
 
-%\begin{frame}\frametitle{Overview}
-%    \begin{center}
-%        \begin{tikzpicture}
-%            \node[anchor=south west, inner sep=0] at (0,2.5) {\begin{small}
-%            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Contents, width=9cm]
-%						\begin{enumerate}
-%							\item Measurement setup
-%							\item Raw signal observed on the bridge
-%							\item Method
-%							\item Results
-%							\item Reliability tests
-%							\item Conclusion and perspective						
-%						\end{enumerate}
-%					\end{tcolorbox}
-%            	\end{small}
-%            	};
-%            \node[anchor=south west, inner sep=0] at (0,0) {\begin{small}
-%            	\begin{tcolorbox}[colback=white,colframe=white,title=, width=9cm]{\textcolor{white}{
-%						\item[] Can we do small-scale monitoring on structures, only requiring (ambient) traffic noise?}}
-%					\end{tcolorbox}
-%            	\end{small}
-%            	};
-%        \end{tikzpicture}
-%    \end{center}
-%\end{frame}
-
-\begin{frame}\frametitle{Overview}
+\begin{frame}
     \begin{center}
         \begin{tikzpicture}
             \node[anchor=center] at (0,0) {\begin{small}
-            	\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Objective, width=9cm]{Is it possible to use ambient and/or traffic noise to monitor small-scale structures?}
+            	\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=\textbf{Objective}, width=9cm]{Is it possible to use ambient and/or traffic noise to monitor small-scale structures?}
 					\end{tcolorbox}
             	\end{small}
             	};
@@ -110,33 +84,16 @@ pdfkeywords = {}}
     \end{center}
 \end{frame}
 
-%\begin{frame}\frametitle{Overview}
-%    \begin{center}
-%        \begin{tikzpicture}
-%            \node[anchor=south west, inner sep=0] at (0,2.5) {\begin{small}
-%            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Contents, width=9cm]
-%						\begin{enumerate}
-%							\item Measurement setup
-%							\item Raw signal observed on the bridge
-%							\item Method
-%							\item Results
-%							\item Reliability tests
-%							\item Conclusion and perspective						
-%						\end{enumerate}
-%					\end{tcolorbox}
-%            	\end{small}
-%            	};
-%            \node[anchor=south west, inner sep=0] at (0,0.3) {\begin{small}
-%            	\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Objective, width=9cm]
-%						\item[] Can we do small-scale monitoring on structures, only requiring (ambient) traffic noise?
-%					\end{tcolorbox}
-%            	\end{small}
-%            	};
-%        \end{tikzpicture}
-%    \end{center}
-%\end{frame}
-
-%
+\begin{frame}\frametitle{Motivation}
+    \begin{center}
+        \begin{tikzpicture}[overlay]
+            \node[anchor=south west, inner sep=0] (box) at (-5,1) {\begin{tcolorbox}[colback=green!5,colframe=red, width=10cm]{Issue: Combination of \textbf{precise} and \textbf{permanent} monitoring with a \textbf{simple} measurement setup and evaluation technique.}
+					\end{tcolorbox}
+            	};
+            	\node[anchor=south west, inner sep=0] (fig) at (-4.2,-4) {\includegraphics[width=.7\textwidth]{Figures/NDT_methods.png}};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
 % =============================================================================
 %
 
@@ -332,32 +289,6 @@ pdfkeywords = {}}
     \end{center}
 \end{frame}
 
-%\begin{frame}{bla}\frametitle{CWI \& Cross-correlations}
-%	\begin{center}
-%        \begin{tikzpicture}
-%            \node[anchor=south west,inner sep=0] (image) at (0,0) 	  
-%            	 {\includegraphics[width=\linewidth,height=0.89\textheight,keepaspectratio]{Figures/hot_cold1.png}};
-%            \node[anchor=south west,inner sep=0] (statements) at (0,0.5) {
-%            	\begin{small}
-%            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Statements, width=6cm]
-%						\begin{itemize}
-%							\item Traffic noise is required for sufficiently high SNR
-%							\item Reverberations for natural frequencies around 3 Hz last long enough and can be used for CWI 
-%						\end{itemize}
-%					\end{tcolorbox}
-%            	\end{small}
-%            };
-%            \node[anchor=south west,inner sep=0] at (6.5,1.5) {
-%            		\begin{tcolorbox}[colback=green!5,colframe=salve@blue,title=Spectrum, width=4.5cm]
-%						\includegraphics[width=\textwidth]{Figures/spectrum.png}
-%					\end{tcolorbox}
-%            };
-%        \end{tikzpicture}
-%    \end{center}
-%\begin{figure}
-%\end{figure}
-%\end{frame}
-
 % =============================================================================
 \section{Results}
 \subsection{Results}
@@ -550,7 +481,7 @@ pdfkeywords = {}}
 \textbf{-1.5 to +2.3 \%}
             			\end{small}
 					\end{tcolorbox}};
-			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\ll$}} ++(box3);
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\pmb{\ll}$}} ++(box3);
 
         \end{tikzpicture}
    \end{center}
@@ -580,8 +511,8 @@ pdfkeywords = {}}
             		    \textbf{-1.5 to +2.3 \%}
             			\end{small}
 					\end{tcolorbox}};
-			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\ll$}} ++(box3);
-			\draw [<->,>=stealth,green,ultra thick,sloped] (box2)-- node[below] {\color{black}\textbf{$<$}} ++(box3) ;
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box1)-- node[above] {\color{black}\textbf{$\pmb{\ll}$}} ++(box3);
+			\draw [<->,>=stealth,green,ultra thick,sloped] (box2)-- node[below] {\color{black}\textbf{$\pmb{<}$}} ++(box3) ;
         \end{tikzpicture}
    \end{center}
 \end{frame}
