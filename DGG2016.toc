@@ -1,20 +1,20 @@
 \beamer@endinputifotherversion {3.24pt}
 \beamer@sectionintoc {1}{Overview}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Overview}{2}{0}{1}
-\beamer@sectionintoc {2}{Setup}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{Setup}{3}{0}{2}
-\beamer@subsectionintoc {2}{2}{Setup}{5}{0}{2}
-\beamer@sectionintoc {3}{Raw}{6}{0}{3}
-\beamer@subsectionintoc {3}{1}{Raw}{6}{0}{3}
-\beamer@sectionintoc {4}{Method}{12}{0}{4}
-\beamer@subsectionintoc {4}{1}{Stretching}{12}{0}{4}
-\beamer@sectionintoc {5}{Results}{16}{0}{5}
-\beamer@subsectionintoc {5}{1}{Results}{16}{0}{5}
-\beamer@subsectionintoc {5}{2}{Velocity variations II}{20}{0}{5}
-\beamer@sectionintoc {6}{Tests}{25}{0}{6}
-\beamer@subsectionintoc {6}{1}{thermalex}{25}{0}{6}
-\beamer@sectionintoc {7}{Conclusions}{29}{0}{7}
-\beamer@subsectionintoc {7}{1}{Conclusions}{29}{0}{7}
-\beamer@subsectionintoc {7}{2}{Outlook}{30}{0}{7}
-\beamer@sectionintoc {8}{Extra}{32}{0}{8}
-\beamer@subsectionintoc {8}{1}{extra slides}{32}{0}{8}
+\beamer@sectionintoc {2}{Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Setup}{6}{0}{2}
+\beamer@sectionintoc {3}{Raw}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Raw}{7}{0}{3}
+\beamer@sectionintoc {4}{Method}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{Stretching}{13}{0}{4}
+\beamer@sectionintoc {5}{Results}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Results}{17}{0}{5}
+\beamer@subsectionintoc {5}{2}{Velocity variations II}{21}{0}{5}
+\beamer@sectionintoc {6}{Tests}{27}{0}{6}
+\beamer@subsectionintoc {6}{1}{thermalex}{27}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{30}{0}{7}
+\beamer@subsectionintoc {7}{1}{Conclusions}{30}{0}{7}
+\beamer@subsectionintoc {7}{2}{Outlook}{31}{0}{7}
+\beamer@sectionintoc {8}{Extra}{35}{0}{8}
+\beamer@subsectionintoc {8}{1}{extra slides}{35}{0}{8}

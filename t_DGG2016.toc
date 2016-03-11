@@ -1,0 +1,19 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Overview}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Overview}{2}{0}{1}
+\beamer@sectionintoc {2}{Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Setup}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Setup}{6}{0}{2}
+\beamer@sectionintoc {3}{Signal}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Signal}{7}{0}{3}
+\beamer@sectionintoc {4}{Method}{13}{0}{4}
+\beamer@subsectionintoc {4}{1}{Stretching}{13}{0}{4}
+\beamer@sectionintoc {5}{Results}{17}{0}{5}
+\beamer@subsectionintoc {5}{1}{Results}{17}{0}{5}
+\beamer@sectionintoc {6}{Tests}{29}{0}{6}
+\beamer@subsectionintoc {6}{1}{tests}{29}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{32}{0}{7}
+\beamer@subsectionintoc {7}{1}{Conclusions}{32}{0}{7}
+\beamer@subsectionintoc {7}{2}{Outlook}{33}{0}{7}
+\beamer@sectionintoc {8}{Extra Slides}{37}{1}{8}
+\beamer@subsectionintoc {8}{1}{extra slides}{37}{1}{8}
